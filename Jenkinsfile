@@ -3,6 +3,9 @@ pipeline{
     tools{
         maven 'Maven'
     }
+    triggers {
+        cron('H * * * *')
+    }
     stages{
         stage('Clone'){
             steps{

@@ -1,7 +1,7 @@
 pipeline{
     agent any
     triggers{
-        crons("* * * * *")
+        cron("* * * * *")
     }
     tools{
         maven 'Maven'
